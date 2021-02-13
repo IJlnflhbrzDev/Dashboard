@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+  <link rel="icon" type="image/png"
+    href="https://th.bing.com/th/id/Rfd1b66e2fa90f5f2724a837154e9df3c?rik=Ie4EumOIwPmnBQ&riu=http%3a%2f%2fwww.rugbycoach.com%2fwp-content%2fuploads%2f2017%2f01%2fdashboard-alt-icon.png&ehk=Wl6RGb6dTcWK0wSOTK1rQEE3Sr9PBdH64UKMdLI6fiI%3d&risl=&pid=ImgRaw" />
+  <link rel="stylesheet" href="style/style.css" />
+  <title>Example Dashboard</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success justify-content-between p-2 ">
+
+    <!-- Navbar Brand Logo  -->
+
+    <div class="navbar-brand d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+          class="bi bi-cpu-fill text-white mx-2" viewBox="0 0 16 16">
+          <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+          <path
+            d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z" />
+        </svg>
+        <span> Hii Dashboard </span>
+      </a>
+      <!-- Mobile Togle ClickedNavbar  -->
+      <div class=" d-flex justify-content-center align-items-center mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="OpenSlide()" width="25" height="25" fill="currentColor" class="bi bi--right text-white" viewBox="0 0 16 16">
+          <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm10.113-5.373a6.59 6.59 0 0 0-.445-.275l.21-.352c.122.074.272.17.452.287.18.117.35.26.51.428.156.164.289.351.398.562.11.207.164.438.164.692 0 .36-.072.65-.216.873-.145.219-.385.328-.721.328-.215 0-.383-.07-.504-.211a.697.697 0 0 1-.188-.463c0-.23.07-.404.211-.521.137-.121.326-.182.569-.182h.281a1.686 1.686 0 0 0-.123-.498 1.379 1.379 0 0 0-.252-.37 1.94 1.94 0 0 0-.346-.298zm-2.168 0A6.59 6.59 0 0 0 10 6.352L10.21 6c.122.074.272.17.452.287.18.117.35.26.51.428.156.164.289.351.398.562.11.207.164.438.164.692 0 .36-.072.65-.216.873-.145.219-.385.328-.721.328-.215 0-.383-.07-.504-.211a.697.697 0 0 1-.188-.463c0-.23.07-.404.211-.521.137-.121.327-.182.569-.182h.281a1.749 1.749 0 0 0-.117-.492 1.402 1.402 0 0 0-.258-.375 1.94 1.94 0 0 0-.346-.3z"/>
+        </svg>
+      </div>
+
+    </div>
+
+    <!-- Content Navigasi -->
+    <div class="profile_notif_right d-flex justify-content-center align-items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell text-white mx-4" viewBox="0 0 16 16">
+        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+      </svg>
+      <div class="user">
+        <img src="http://lite.codedthemes.com/material-able/assets/images/avatar-4.jpg" alt="users" class="rounded-circle" style="width: 40px;">
+        <h3>IJlal Naufal Hibrizi</h3>
+      </div>
+    </div>
+</nav>
+  <section class="RootDashboard">
+    <div class="DashboardNav ">
+      <nav style="height: 100vh; background-color: yellow; ">
+       <ul>
+         <li><a href="#Coba1" class="navLink">Coba</a></li>
+         <li><a href="#Coba2" class="navLink">Hellow </a></li>
+       </ul>
+      </nav>
+    </div>
+
+    <div class="DashboardMain">
+      <main style="height: 100vh; background-color: blue">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quo
+        mollitia blanditiis enim unde omnis, obcaecati voluptatum tenetur
+        repudiandae repellendus quaerat distinctio hic magnam illum
+        praesentium veniam officia quod ut? Maiores provident eaque minima
+        pariatur dolorum eligendi delectus placeat porro dolorem natus. Dolore
+        atque enim expedita assumenda reprehenderit possimus nesciunt
+        voluptates ipsa nemo id rem repellendus autem voluptas repudiandae,
+        cupiditate blanditiis esse, rerum nihil sed minima. Illum natus nihil
+        quae eos dolore, at quia praesentium facilis esse veritatis voluptas
+        minima illo ea inventore debitis. Maxime est, quis error numquam
+        beatae nesciunt, nemo laboriosam temporibus, rerum distinctio omnis
+        mollitia ut aliquid.
+
+        <div class="bg-danger" id="Coba1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fugiat, corrupti sed incidunt ad sint architecto commodi explicabo tempore id inventore iure corporis dolores fugit illum neque repellat alias? Eligendi asperiores maiores ratione eaque, beatae velit excepturi ducimus fuga eum.
+        </div>
+        <div class="bg-primary" id="Coba2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fugiat, corrupti sed incidunt ad sint architecto commodi explicabo tempore id inventore iure corporis dolores fugit illum neque repellat alias? Eligendi asperiores maiores ratione eaque, beatae velit excepturi ducimus fuga eum.
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

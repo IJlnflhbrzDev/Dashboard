@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+svg {
+  cursor: pointer;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.RootDashboard {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "navbar main main main main ";
+  position: relative;
+}
+
+.DashboardNav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: navbar;
+  display: block;
+  width: 300px;
+}
+
+.OpenSlide {
+  display: none;
+}
+
+.DashboardMain {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+}
+
+@media (max-width: 992px) {
+  .RootDashboard {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: main;
+  }
+  .DashboardMain {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-area: main;
+    z-index: -1;
+  }
+  .DashboardNav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 300px;
+  }
+  .OpenSlide {
+    display: block !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
