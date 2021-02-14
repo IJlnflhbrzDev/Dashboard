@@ -1,8 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap");
+@import "./_Variabel.scss";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.navbar {
+  background-color: $blueWhite;
+  .navbar-brand {
+    color: white;
+  }
+
+  // style engaturan profile
+
+  .dropdown-menu {
+    margin: -450%;
+  }
+
+  .dropdown-toggle {
+    &::after {
+      margin-left: 0;
+    }
+  }
 }
 svg {
   cursor: pointer;
@@ -32,6 +51,13 @@ body {
   grid-area: main;
 }
 
+.user_title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 10px;
+  color: white;
+}
+
 @media (max-width: 992px) {
   .RootDashboard {
     display: grid;
@@ -51,5 +77,11 @@ body {
   }
   .OpenSlide {
     display: block !important;
+  }
+}
+// media profile mobile
+@media (max-width: 510px) {
+  .user_title {
+    visibility: hidden;
   }
 }

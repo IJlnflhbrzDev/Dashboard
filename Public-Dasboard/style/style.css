@@ -6,6 +6,14 @@
           box-sizing: border-box;
 }
 
+.navbar {
+  background-color: #448aff;
+}
+
+.navbar .navbar-brand {
+  color: white;
+}
+
 svg {
   cursor: pointer;
 }
@@ -42,6 +50,13 @@ body {
   grid-area: main;
 }
 
+.user_title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 10px;
+  color: white;
+}
+
 @media (max-width: 992px) {
   .RootDashboard {
     display: -ms-grid;
@@ -66,5 +81,19 @@ body {
   .OpenSlide {
     display: block !important;
   }
+}
+
+@media (max-width: 510px) {
+  .user_title {
+    visibility: hidden;
+  }
+}
+
+.dropdown-menu {
+  margin: -450%;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0;
 }
 /*# sourceMappingURL=style.css.map */
