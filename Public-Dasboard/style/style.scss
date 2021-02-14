@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap");
-@import "./_Variabel.scss";
+@import "__Variabel.scss";
 * {
   margin: 0;
   padding: 0;
@@ -7,26 +7,44 @@
 }
 .navbar {
   background-color: $blueWhite;
-  .navbar-brand {
-    color: white;
-  }
+  grid-area: navbar;
 
-  // style engaturan profile
+  // style pengaturan profile
 
   .dropdown-menu {
-    margin: -450%;
+    margin-left: -450%;
   }
 
   .dropdown-toggle {
     &::after {
-      margin-left: 0;
+      display: none;
     }
   }
 }
+
+// Content kanan profile
+.profile-circle-right {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  img {
+    border-radius: 50%;
+    width: 20%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .content-profile {
+    margin-top: 20px;
+  }
+}
+
 svg {
   cursor: pointer;
 }
-html,
+
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
@@ -34,17 +52,32 @@ body {
 
 .RootDashboard {
   display: grid;
-  grid-template-areas: "navbar main main main main ";
+  grid-template-areas:
+    "sidebar navbar navbar navbar navbar "
+    "sidebar main main main main "
+    "sidebar main main main main ";
   position: relative;
 }
 
 .DashboardNav {
-  grid-area: navbar;
+  grid-area: sidebar;
+  background-color: yellow;
   display: block;
   width: 300px;
+  transition: 0.5s;
+
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .OpenSlide {
-  display: none;
+  width: 0px;
+  .profile-circle-right,
+  ul {
+    visibility: hidden;
+  }
 }
 
 .DashboardMain {

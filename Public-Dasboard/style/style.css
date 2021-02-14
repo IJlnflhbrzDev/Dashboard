@@ -8,17 +8,49 @@
 
 .navbar {
   background-color: #448aff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: navbar;
 }
 
-.navbar .navbar-brand {
-  color: white;
+.navbar .dropdown-menu {
+  margin-left: -450%;
+}
+
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
+.profile-circle-right {
+  border: 1px solid black;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-circle-right img {
+  border-radius: 50%;
+  width: 20%;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.profile-circle-right .content-profile {
+  margin-top: 20px;
 }
 
 svg {
   cursor: pointer;
 }
 
-html,
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
@@ -27,24 +59,46 @@ body {
 .RootDashboard {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "navbar main main main main ";
+      grid-template-areas: "sidebar navbar navbar navbar navbar " "sidebar main main main main " "sidebar main main main main ";
   position: relative;
 }
 
 .DashboardNav {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
-  grid-area: navbar;
+  grid-area: sidebar;
+  background-color: yellow;
   display: block;
   width: 300px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.DashboardNav .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .OpenSlide {
-  display: none;
+  width: 0px;
+}
+
+.OpenSlide .profile-circle-right,
+.OpenSlide ul {
+  visibility: hidden;
 }
 
 .DashboardMain {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: main;
@@ -64,7 +118,8 @@ body {
         grid-template-areas: main;
   }
   .DashboardMain {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     -ms-grid-column-span: 4;
     grid-area: main;
@@ -87,13 +142,5 @@ body {
   .user_title {
     visibility: hidden;
   }
-}
-
-.dropdown-menu {
-  margin: -450%;
-}
-
-.dropdown-toggle::after {
-  margin-left: 0;
 }
 /*# sourceMappingURL=style.css.map */
