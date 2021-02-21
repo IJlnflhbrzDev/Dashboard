@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background-color: #448aff;
+  background-color: #4489fe;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
@@ -22,18 +22,35 @@
   display: none;
 }
 
+.sidebar_left {
+  padding-top: 2px;
+  background-color: #4489fe !important;
+}
+
+.sidebar_left a {
+  color: white !important;
+}
+
 .profile-circle-right {
-  border: 1px solid black;
+  background: url("../assets/image/profile-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: sans-serif;
+  border-bottom: 1px solid black;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 200px;
+  min-height: 101px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
 
 .profile-circle-right img {
@@ -89,11 +106,12 @@ body {
 
 .OpenSlide {
   width: 0px;
+  border-right: 1px solid black;
 }
 
 .OpenSlide .profile-circle-right,
 .OpenSlide ul {
-  visibility: hidden;
+  display: none;
 }
 
 .DashboardMain {
@@ -102,6 +120,24 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: main;
+  position: relative;
+}
+
+.DashboardMain header {
+  background-image: url("../assets/image/jumbotron.jpeg");
+  width: 100%;
+  max-height: 200px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .user_title {
@@ -135,6 +171,22 @@ body {
   }
   .OpenSlide {
     display: block !important;
+  }
+  .OpenSlide .profile-circle-right,
+  .OpenSlide ul {
+    display: block;
+  }
+  .iconsBar {
+    z-index: 999 !important;
+  }
+  .profile-circle-right {
+    text-align: center;
+  }
+  .profile-circle-right img {
+    margin-top: 10px;
+    width: 20%;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
 

@@ -19,7 +19,7 @@
       <!-- Navbar Brand Logo  -->
       <div class="navbar-brand d-flex justify-content-between align-items-center">
         <!-- Mobile Togle ClickedNavbar  -->
-        <div class=" d-flex justify-content-center align-items-center mt-1">
+        <div class=" d-flex justify-content-center align-items-center mt-1 iconsBar">
           <svg xmlns="http://www.w3.org/2000/svg" onclick="OpenSlide()" width="25" height="25" fill="currentColor" class="bi bi--right text-white" viewBox="0 0 16 16">
             <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm10.113-5.373a6.59 6.59 0 0 0-.445-.275l.21-.352c.122.074.272.17.452.287.18.117.35.26.51.428.156.164.289.351.398.562.11.207.164.438.164.692 0 .36-.072.65-.216.873-.145.219-.385.328-.721.328-.215 0-.383-.07-.504-.211a.697.697 0 0 1-.188-.463c0-.23.07-.404.211-.521.137-.121.326-.182.569-.182h.281a1.686 1.686 0 0 0-.123-.498 1.379 1.379 0 0 0-.252-.37 1.94 1.94 0 0 0-.346-.298zm-2.168 0A6.59 6.59 0 0 0 10 6.352L10.21 6c.122.074.272.17.452.287.18.117.35.26.51.428.156.164.289.351.398.562.11.207.164.438.164.692 0 .36-.072.65-.216.873-.145.219-.385.328-.721.328-.215 0-.383-.07-.504-.211a.697.697 0 0 1-.188-.463c0-.23.07-.404.211-.521.137-.121.327-.182.569-.182h.281a1.749 1.749 0 0 0-.117-.492 1.402 1.402 0 0 0-.258-.375 1.94 1.94 0 0 0-.346-.3z"/>
           </svg>
@@ -57,15 +57,17 @@
   </nav>
     <div class="DashboardNav ">
       <nav style="height: 100vh; background-color: white; ">
-        <a class="navbar-brand  text-dark" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-            class="bi bi-cpu-fill  mx-2" viewBox="0 0 16 16">
-            <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
-            <path
-              d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z" />
-          </svg>
-          <span class="p-2"> Hii Dashboard</span>
-        </a>
+        <div class="sidebar_left">
+          <a class="navbar-brand   text-dark" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+              class="bi bi-cpu-fill  mx-2" viewBox="0 0 16 16">
+              <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+              <path
+                d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z" />
+            </svg>
+            <span class="p-2"> Hii Dashboard</span>
+          </a>
+        </div>
 
         <!-- profile right navbars  -->
         <div class="profile-circle-right">
@@ -87,14 +89,19 @@
 
     <div class="DashboardMain">
       <main style="height: 100vh;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quo
-        mollitia blanditiis enim unde omnis, obcaecati voluptatum tenetur
-        repudiandae repellendus quaerat distinctio hic magnam illum
+          <header class="jumbotron p-3"  id="Coba1">
+            <div class="jumbotron-title ">
+              <h5>Dashboard</h5>
+              <small>welcome to dashboar Ijlal Naufal Hibrizi</small>
+            </div>
 
-        <div class="bg-danger" id="Coba1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fugiat, corrupti sed incidunt ad sint architecto commodi explicabo tempore id inventore iure corporis dolores fugit illum neque repellat alias? Eligendi asperiores maiores ratione eaque, beatae velit excepturi ducimus fuga eum.
-        </div>
-        <div class="bg-primary" id="Coba2">
+            <div class="breadCrum_Date">
+              <h6>Date...</h6>
+            </div>
+
+          </header>
+
+        <div class="bg" id="Coba2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fugiat, corrupti sed incidunt ad sint architecto commodi explicabo tempore id inventore iure corporis dolores fugit illum neque repellat alias? Eligendi asperiores maiores ratione eaque, beatae velit excepturi ducimus fuga eum.
         </div>
       </main>

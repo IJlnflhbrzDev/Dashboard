@@ -3,6 +3,7 @@ function OpenSlide() {
 }
 
 const NoneParentMenu = document.querySelectorAll(".navLink");
+console.log(NoneParentMenu)
 
 
 if (document.body.clientWidth <= 992) {
@@ -13,3 +14,7 @@ if (document.body.clientWidth <= 992) {
      })
 }
 
+
+
+const breadCrum_Date = document.querySelector('.breadCrum_Date ');
+breadCrum_Date.innerHTML = new Date().toDateString();

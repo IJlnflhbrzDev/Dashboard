@@ -8,7 +8,6 @@
 .navbar {
   background-color: $blueWhite;
   grid-area: navbar;
-
   // style pengaturan profile
 
   .dropdown-menu {
@@ -22,20 +21,36 @@
   }
 }
 
+// Sidebar Left
+.sidebar_left {
+  padding-top: 2px;
+  background-color: $blueWhite !important;
+  a {
+    color: white !important ;
+  }
+}
+
 // Content kanan profile
 .profile-circle-right {
-  border: 1px solid black;
+  background: url("../assets/image/profile-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: sans-serif;
+  border-bottom: 1px solid black;
   width: 100%;
   display: flex;
+  max-height: 200px;
+  min-height: 101px;
   justify-content: start;
   align-items: center;
+  margin-bottom: 10px;
   img {
     border-radius: 50%;
     width: 20%;
     margin-right: 20px;
     margin-left: 20px;
   }
-
   .content-profile {
     margin-top: 20px;
   }
@@ -74,14 +89,27 @@ body {
 }
 .OpenSlide {
   width: 0px;
+  border-right: 1px solid black;
+
   .profile-circle-right,
   ul {
-    visibility: hidden;
+    display: none;
   }
 }
 
 .DashboardMain {
   grid-area: main;
+  position: relative;
+  header {
+    background-image: url("../assets/image/jumbotron.jpeg");
+    width: 100%;
+    max-height: 200px;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+  }
 }
 
 .user_title {
@@ -110,6 +138,23 @@ body {
   }
   .OpenSlide {
     display: block !important;
+    .profile-circle-right,
+    ul {
+      display: block;
+    }
+  }
+
+  .iconsBar {
+    z-index: 999 !important;
+  }
+  .profile-circle-right {
+    text-align: center;
+    img {
+      margin-top: 10px;
+      width: 20%;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
   }
 }
 // media profile mobile
