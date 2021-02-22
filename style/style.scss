@@ -5,25 +5,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  background-color: white;
+  color: black;
+}
 .navbar {
   background-color: $blueWhite;
   grid-area: navbar;
   // style pengaturan profile
-
-  .dropdown-menu {
-    margin-left: -450%;
-  }
-
-  .dropdown-toggle {
-    &::after {
-      display: none;
-    }
-  }
 }
 
 // Sidebar Left
 .sidebar_left {
-  padding-top: 2px;
+  padding-top: 3px;
   background-color: $blueWhite !important;
   a {
     color: white !important ;
@@ -58,11 +54,6 @@
 
 svg {
   cursor: pointer;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
 }
 
 .RootDashboard {
@@ -104,19 +95,55 @@ body {
     background-image: url("../assets/image/jumbotron.jpeg");
     width: 100%;
     max-height: 200px;
-    min-height: 100px;
+    min-height: 102px;
     display: flex;
     justify-content: space-between;
     color: white;
     align-items: center;
   }
 }
+// Profile user and title
+.user_right {
+  .user_title {
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+    color: white;
+  }
+}
+// =Notification
+.notification {
+  position: relative;
+  .notif_count {
+    position: absolute;
+    left: 44%;
+    top: 2%;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+// dropdow left atau pengaturan di kanan
+.dropdown_user_right {
+  .dropdown-menu {
+    margin-top: 10px;
+    margin-left: -310%;
+    .dropdown-item {
+      padding: 10px 20px;
 
-.user_title {
-  font-weight: bold;
-  font-size: 15px;
-  margin-right: 10px;
-  color: white;
+      .set_right {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .dropdown-toggle {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -160,6 +187,6 @@ body {
 // media profile mobile
 @media (max-width: 510px) {
   .user_title {
-    visibility: hidden;
+    display: none;
   }
 }

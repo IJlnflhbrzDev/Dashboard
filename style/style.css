@@ -6,6 +6,13 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  background-color: white;
+  color: black;
+}
+
 .navbar {
   background-color: #4489fe;
   -ms-grid-row: 1;
@@ -14,16 +21,8 @@
   grid-area: navbar;
 }
 
-.navbar .dropdown-menu {
-  margin-left: -450%;
-}
-
-.navbar .dropdown-toggle::after {
-  display: none;
-}
-
 .sidebar_left {
-  padding-top: 2px;
+  padding-top: 3px;
   background-color: #4489fe !important;
 }
 
@@ -66,11 +65,6 @@
 
 svg {
   cursor: pointer;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
 }
 
 .RootDashboard {
@@ -127,7 +121,7 @@ body {
   background-image: url("../assets/image/jumbotron.jpeg");
   width: 100%;
   max-height: 200px;
-  min-height: 100px;
+  min-height: 102px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,11 +134,43 @@ body {
           align-items: center;
 }
 
-.user_title {
+.user_right .user_title {
   font-weight: bold;
   font-size: 15px;
   margin-right: 10px;
   color: white;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification .notif_count {
+  position: absolute;
+  left: 44%;
+  top: 2%;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.dropdown_user_right .dropdown-menu {
+  margin-top: 10px;
+  margin-left: -310%;
+}
+
+.dropdown_user_right .dropdown-menu .dropdown-item {
+  padding: 10px 20px;
+}
+
+.dropdown_user_right .dropdown-menu .dropdown-item .set_right {
+  margin-left: 5px;
+}
+
+.dropdown_user_right .dropdown-toggle::after {
+  display: none;
 }
 
 @media (max-width: 992px) {
@@ -192,7 +218,7 @@ body {
 
 @media (max-width: 510px) {
   .user_title {
-    visibility: hidden;
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
