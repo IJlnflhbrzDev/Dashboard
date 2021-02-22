@@ -18,3 +18,8 @@ if (document.body.clientWidth <= 992) {
 
 const breadCrum_Date = document.querySelector('.breadCrum_Date ');
 breadCrum_Date.innerHTML = new Date().toDateString();
+
+const Dark_mode = document.querySelector('#darkMode');
+Dark_mode.addEventListener('click', function () {
+  document.body.classList.toggle("dark_mode")
+})

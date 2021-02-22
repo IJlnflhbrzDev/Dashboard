@@ -11,6 +11,15 @@ body {
   overflow-x: hidden;
   background-color: white;
   color: black;
+  -webkit-transition: 0.55s ease-in-out;
+  transition: 0.55s ease-in-out;
+}
+
+.dark_mode {
+  background-color: black;
+  color: white;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 .navbar {
@@ -79,7 +88,6 @@ svg {
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: sidebar;
-  background-color: yellow;
   display: block;
   width: 300px;
   -webkit-transition: 0.5s;

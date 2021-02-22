@@ -10,6 +10,12 @@ body {
   overflow-x: hidden;
   background-color: white;
   color: black;
+  transition: 0.55s ease-in-out;
+}
+.dark_mode {
+  background-color: black;
+  color: white;
+  transition: 1s all ease;
 }
 .navbar {
   background-color: $blueWhite;
@@ -67,7 +73,6 @@ svg {
 
 .DashboardNav {
   grid-area: sidebar;
-  background-color: yellow;
   display: block;
   width: 300px;
   transition: 0.5s;
