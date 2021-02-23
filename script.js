@@ -23,3 +23,8 @@ const Dark_mode = document.querySelector('#darkMode');
 Dark_mode.addEventListener('click', function () {
   document.body.classList.toggle("dark_mode")
 })
+
+const animated_preeloader = document.getElementById('animated_preeloader');
+window.addEventListener("load" ,  function () {
+     animated_preeloader.style.display = " none ";
+})
