@@ -9,11 +9,11 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   background-color: white;
-  color: black;
+  color: rgba(38, 80, 143, 1);
   transition: 0.55s ease-in-out;
 }
 .dark_mode {
-  background-color: black;
+  background-color: rgba(38, 80, 143, 1);
   color: white;
   transition: 1s all ease;
 }
@@ -131,7 +131,7 @@ svg {
     overflow: hidden;
   }
 }
-// dropdow left atau pengaturan di kanan
+// dropdow right atau pengaturan di kanan
 .dropdown_user_right {
   .dropdown-menu {
     margin-top: 10px;
@@ -162,15 +162,18 @@ svg {
     z-index: -1;
   }
   .DashboardNav {
-    display: none;
+    transform: scale(0);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     width: 300px;
+    background-color: white;
+    transition: all 0.32s ease-in-out;
   }
   .OpenSlide {
-    display: block !important;
+    transform: scale(1) !important;
+    transition: 0.34s all ease-in-out;
     .profile-circle-right,
     ul {
       display: block;
