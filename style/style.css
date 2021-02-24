@@ -1,19 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
-  background-color: white;
-  color: #26508f;
-  -webkit-transition: 0.55s ease-in-out;
-  transition: 0.55s ease-in-out;
-  position: relative;
+.navbar {
+  background-color: #4489fe;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: navbar;
 }
 
 #animated_preeloader {
@@ -33,12 +24,21 @@ body {
   transition: 1s all ease;
 }
 
-.navbar {
-  background-color: #4489fe;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-area: navbar;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  background-color: white;
+  color: #26508f;
+  -webkit-transition: 0.55s ease-in-out;
+  transition: 0.55s ease-in-out;
+  position: relative;
 }
 
 .sidebar_left {
