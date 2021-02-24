@@ -2,6 +2,7 @@
 @import "__Variabel.scss";
 @import "./_navbar";
 @import "./_animasi";
+@import "./_status-user";
 * {
   margin: 0;
   padding: 0;
@@ -89,6 +90,7 @@ svg {
 .DashboardMain {
   grid-area: main;
   position: relative;
+  background-color: #eff5f6;
   header {
     background-image: url("../assets/image/jumbotron.jpeg");
     width: 100%;
