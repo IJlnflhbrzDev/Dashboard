@@ -1,4 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap");
+.bx-user {
+  color: #4688ff;
+}
+
+.bx-volume-full {
+  color: #11c15c;
+}
+
+.bx-file {
+  color: #ff5353;
+}
+
+.bx-envelope-open {
+  color: #4688ff;
+}
+
+.bx-share-alt {
+  color: #4688ff;
+}
+
+.bx-equalizer {
+  color: #ff5353;
+}
+
+.bx-wifi {
+  color: #4688ff;
+}
+
+.bx-station {
+  color: #11c15c;
+}
+
 .navbar {
   background-color: #4489fe;
   -ms-grid-row: 1;
@@ -43,12 +75,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .statistik_user .flex_icons {
@@ -65,7 +91,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 10px 20px;
+  padding: 19px 20px;
 }
 
 .statistik_user .flex_icons h5 {
@@ -79,9 +105,8 @@
   color: #b8b8b8;
 }
 
-.statistik_user .flex_icons svg {
-  width: 26px;
-  text-align: center;
+.statistik_user .flex_icons i.bx {
+  font-size: 30px;
 }
 
 .grid-akalin {
@@ -97,7 +122,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
   background-color: white;
   color: #26508f;
   -webkit-transition: 0.55s ease-in-out;
