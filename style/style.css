@@ -40,7 +40,7 @@
 }
 
 .body_content .info-user {
-  text-align: left;
+  text-align: center;
 }
 
 .body_content .info-user h5 {
@@ -120,7 +120,7 @@ svg {
 .RootDashboard {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "sidebar navbar navbar navbar navbar " "sidebar main main main main " "sidebar main main main main ";
+      grid-template-areas: "sidebar navbar navbar navbar navbar  " "sidebar main main main main  " "sidebar   main main main main";
   position: relative;
 }
 
@@ -133,6 +133,10 @@ svg {
   width: 300px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.DashboardNav nav {
+  height: 100%;
 }
 
 .DashboardNav .navbar-brand {
@@ -275,9 +279,29 @@ svg {
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 768px) {
+  .status-card {
+    width: 100%;
+    text-align: center;
+  }
+  .status-card .row {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
   .user_title {
     display: none;
+  }
+  .icon_body {
+    border-bottom: 1px solid #d6d6d6;
+  }
+  .icon_body .info-user {
+    text-align: center;
+  }
+  .icon_body .col-sm-6 {
+    width: 50% !important;
+    border: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

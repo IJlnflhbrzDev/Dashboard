@@ -59,9 +59,9 @@ svg {
 .RootDashboard {
   display: grid;
   grid-template-areas:
-    "sidebar navbar navbar navbar navbar "
-    "sidebar main main main main "
-    "sidebar main main main main ";
+    "sidebar navbar navbar navbar navbar  "
+    "sidebar main main main main  "
+    "sidebar   main main main main";
   position: relative;
 }
 
@@ -71,6 +71,9 @@ svg {
   width: 300px;
   transition: 0.5s;
 
+  nav {
+    height: 100%;
+  }
   .navbar-brand {
     display: flex;
     justify-content: center;
@@ -188,9 +191,33 @@ svg {
     }
   }
 }
+.card-block {
+  // padding: 0 15px;
+}
 // media profile mobile
-@media (max-width: 510px) {
+@media (max-width: 768px) {
+  .status-card {
+    width: 100%;
+    text-align: center;
+    .row {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
   .user_title {
     display: none;
+  }
+  .icon_body {
+    border-bottom: 1px solid #d6d6d6;
+
+    .info-user {
+      text-align: center;
+    }
+    .col-sm-6 {
+      width: 50% !important;
+      border: none !important;
+    }
   }
 }
