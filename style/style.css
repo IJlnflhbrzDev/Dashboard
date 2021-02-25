@@ -26,32 +26,6 @@
 
 .dark_mode .DashboardMain {
   background-color: inherit;
-  color: black;
-}
-
-.body_content .status-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.body_content svg {
-  width: 30px;
-}
-
-.body_content .info-user {
-  text-align: center;
-}
-
-.body_content .info-user h5 {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.body_content .info-user p {
-  font-size: 13px;
-  color: #78909c !important;
-  line-height: 1.1;
 }
 
 * {
@@ -136,7 +110,7 @@ svg {
 }
 
 .DashboardNav nav {
-  height: 100%;
+  height: 100vh;
 }
 
 .DashboardNav .navbar-brand {
@@ -279,29 +253,9 @@ svg {
   }
 }
 
-@media (max-width: 768px) {
-  .status-card {
-    width: 100%;
-    text-align: center;
-  }
-  .status-card .row {
-    margin: 0;
-  }
-}
-
 @media (max-width: 576px) {
   .user_title {
     display: none;
-  }
-  .icon_body {
-    border-bottom: 1px solid #d6d6d6;
-  }
-  .icon_body .info-user {
-    text-align: center;
-  }
-  .icon_body .col-sm-6 {
-    width: 50% !important;
-    border: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
