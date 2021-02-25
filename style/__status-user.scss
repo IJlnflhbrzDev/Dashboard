@@ -1,0 +1,44 @@
+.bb-statistik {
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+.br-statistik {
+  border-right: 1px solid rgb(199, 199, 199);
+}
+.statistik_user {
+  .statistik_card {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .flex_icons {
+    background-color: white;
+
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    h5 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+    small {
+      font-size: 13px;
+      color: rgb(184, 184, 184);
+    }
+    svg {
+      width: 26px;
+      text-align: center;
+    }
+  }
+}
+
+.grid-akalin {
+  visibility: hidden;
+}

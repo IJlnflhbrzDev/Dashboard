@@ -19,13 +19,73 @@
 
 .dark_mode {
   background-color: #26508f;
-  color: white;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
 }
 
 .dark_mode .DashboardMain {
   background-color: inherit;
+}
+
+.bb-statistik {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.br-statistik {
+  border-right: 1px solid #c7c7c7;
+}
+
+.statistik_user .statistik_card {
+  width: 100%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.statistik_user .flex_icons {
+  background-color: white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px 20px;
+}
+
+.statistik_user .flex_icons h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.statistik_user .flex_icons small {
+  font-size: 13px;
+  color: #b8b8b8;
+}
+
+.statistik_user .flex_icons svg {
+  width: 26px;
+  text-align: center;
+}
+
+.grid-akalin {
+  visibility: hidden;
 }
 
 * {
@@ -37,7 +97,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color: white;
   color: #26508f;
   -webkit-transition: 0.55s ease-in-out;
@@ -94,7 +154,11 @@ svg {
 .RootDashboard {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "sidebar navbar navbar navbar navbar  " "sidebar main main main main  " "sidebar   main main main main";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-row: inherit;
+      grid-template-areas: "sidebar  navbar navbar navbar navbar  " "sidebar  main main main main  " "sidebar    main main main main";
   position: relative;
 }
 
@@ -142,6 +206,7 @@ svg {
   -ms-grid-column-span: 4;
   grid-area: main;
   position: relative;
+  width: 100%;
   background-color: #eff5f6;
 }
 

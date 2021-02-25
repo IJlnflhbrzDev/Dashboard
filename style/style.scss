@@ -10,7 +10,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color: white;
   color: rgba(38, 80, 143, 1);
   transition: 0.55s ease-in-out;
@@ -58,10 +58,12 @@ svg {
 
 .RootDashboard {
   display: grid;
+  justify-content: space-between;
+  grid-row: inherit;
   grid-template-areas:
-    "sidebar navbar navbar navbar navbar  "
-    "sidebar main main main main  "
-    "sidebar   main main main main";
+    "sidebar  navbar navbar navbar navbar  "
+    "sidebar  main main main main  "
+    "sidebar    main main main main";
   position: relative;
 }
 
@@ -93,6 +95,7 @@ svg {
 .DashboardMain {
   grid-area: main;
   position: relative;
+  width: 100%;
   background-color: #eff5f6;
   header {
     background-image: url("../assets/image/jumbotron.jpeg");
