@@ -6,7 +6,6 @@ $merahMuda: #fb7c87;
 $biruTua: #4688ff;
 $hijauTua: #11c15c;
 $merahTua: #ff5353;
-$hijauTua: #11c15c;
 
 // WARNA ICON STATUS DASHBOARD
 .bx-user {
@@ -32,4 +31,11 @@ $hijauTua: #11c15c;
 }
 .bx-station {
   color: $hijauTua;
+}
+
+.bg-rating-star {
+  background-color: $hijauTua;
+}
+.bg-rating-achivement {
+  background-color: $blueMuda;
 }

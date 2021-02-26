@@ -37,6 +37,31 @@
   }
 }
 
+// Rting acivement
+.ratings,
+.Achievements {
+  .ratings_title {
+    h5 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+}
+
+.ratings,
+.Achievements {
+  overflow: hidden;
+
+  border-radius: 7px;
+  i.bx {
+    font-size: 34px;
+  }
+}
+
 .grid-akalin {
   visibility: hidden;
 }

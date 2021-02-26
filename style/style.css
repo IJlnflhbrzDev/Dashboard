@@ -31,6 +31,14 @@
   color: #11c15c;
 }
 
+.bg-rating-star {
+  background-color: #11c15c;
+}
+
+.bg-rating-achivement {
+  background-color: #4489fe;
+}
+
 .navbar {
   background-color: #4489fe;
   -ms-grid-row: 1;
@@ -107,6 +115,29 @@
 
 .statistik_user .flex_icons i.bx {
   font-size: 30px;
+}
+
+.ratings .ratings_title h5,
+.Achievements .ratings_title h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ratings .ratings_title p,
+.Achievements .ratings_title p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ratings,
+.Achievements {
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.ratings i.bx,
+.Achievements i.bx {
+  font-size: 34px;
 }
 
 .grid-akalin {
