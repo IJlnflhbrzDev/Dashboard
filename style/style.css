@@ -180,9 +180,13 @@
           box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-wrap: break-word;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
   background-color: white;
   color: #26508f;
   -webkit-transition: 0.55s ease-in-out;
