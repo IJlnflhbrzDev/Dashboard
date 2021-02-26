@@ -144,6 +144,35 @@
   visibility: hidden;
 }
 
+.DashboardNav nav ul.menu-sidebar a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  width: 98%;
+  padding: 8px;
+  margin-left: -12px;
+  color: black;
+  overflow: hidden;
+  border-radius: 3px;
+  -webkit-transition: all 0.32s ease;
+  transition: all 0.32s ease;
+}
+
+.DashboardNav nav ul.menu-sidebar a:hover {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  background-color: #cacaca;
+}
+
+.DashboardNav nav ul.menu-sidebar .active_bar {
+  background-color: #448aff !important;
+  color: white;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.22s ease;
+  transition: all 0.22s ease;
+}
+
 * {
   margin: 0;
   padding: 0;

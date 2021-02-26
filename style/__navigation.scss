@@ -1,0 +1,28 @@
+.DashboardNav {
+  nav {
+    ul.menu-sidebar {
+      a {
+        display: block;
+        margin-top: 20px;
+        text-decoration: none;
+        width: 98%;
+        padding: 8px;
+        margin-left: -12px;
+        color: black;
+        overflow: hidden;
+        border-radius: 3px;
+        transition: all 0.32s ease;
+        &:hover {
+          text-decoration: solid;
+          background-color: rgb(202, 202, 202);
+        }
+      }
+      .active_bar {
+        background-color: #448aff !important;
+        color: white;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+        transition: all 0.22s ease;
+      }
+    }
+  }
+}

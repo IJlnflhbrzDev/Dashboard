@@ -13,9 +13,6 @@ if (document.body.clientWidth <= 992) {
           })
      })
 }
-
-
-
 const breadCrum_Date = document.querySelector('.breadCrum_Date ');
 breadCrum_Date.innerHTML = new Date().toDateString();
 
